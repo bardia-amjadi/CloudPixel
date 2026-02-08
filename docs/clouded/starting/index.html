@@ -241,6 +241,110 @@ Other informations are hide for secuiry reasons
   </ul>
 
 </article>
+               <article class="blog-post">
+  <h2 class="display-5 link-body-emphasis mb-1">اتصال سیستم به حالت آنلاین و راه‌اندازی Tunnel</h2>
+  <p class="blog-post-meta">راهنمای اتصال CloudPixel</p>
+
+  <p>
+    در این آموزش یاد می‌گیریم چگونه سیستم خود را از حالت <strong>آفلاین</strong> به <strong>آنلاین</strong> تغییر داده و اتصال
+    <strong>Tunnel</strong> را برای برنامه‌های خود برقرار کنیم. این مراحل به شما کمک می‌کنند تا سیستم شما بتواند به سرویس‌های ابری CloudPixel متصل شده و از امکانات مدیریت و کنترل برنامه‌ها به صورت آنلاین استفاده کند.
+  </p>
+
+  <hr>
+
+  <h2>مرحله 1 — ورود به حساب کاربری</h2>
+  <p>ابتدا دستور زیر را در کنسول وارد کنید:</p>
+  <pre><code>login</code></pre>
+
+  <p>
+    بعد از اجرای این دستور، یک صفحه مرورگر در آدرس <code>localpixel</code> باز می‌شود.  
+    شما باید <strong>نام کاربری و رمز عبور</strong> خود را وارد کنید تا اتصال به حساب کاربری CloudPixel انجام شود.
+  </p>
+
+  <p>
+    پس از موفقیت، در کنسول پیام زیر را مشاهده خواهید کرد:
+  </p>
+  <pre><code>You successfully logged in your account</code></pre>
+
+  <p>
+    اگر پیام موفقیت را مشاهده نکردید یا خطایی دریافت کردید، دوباره دستور <code>login</code> را اجرا کنید. این عملیات ممکن است در اولین بار با تأخیر انجام شود یا نیاز باشد مرورگر خود را ریفرش کنید.
+  </p>
+
+  <h2>مرحله 2 — اتصال به Tunnel</h2>
+  <p>
+    پس از ورود موفق به حساب، وقت آن است که سیستم خود را به یک <strong>Tunnel</strong> متصل کنیم. برای این کار دستور زیر را وارد کنید:
+  </p>
+  <pre><code>link tunnel {TUNNEL_TOKEN}</code></pre>
+
+  <p>
+    پس از اجرای دستور، اطلاعاتی مشابه زیر نمایش داده می‌شود:
+  </p>
+  <pre><code>
+Owned by {your name}
+Domains : {Your Subdomain or Domains}
+Last Ping : {Last Ping}
+Available : true/false
+
+This is your application? Y/N
+  </code></pre>
+
+  <p>
+    گزینه <strong>Y</strong> را انتخاب کنید تا اتصال برنامه شما تأیید شود. سپس سیستم از شما می‌خواهد رمز عبور خود را وارد کنید:
+  </p>
+  <pre><code>Please enter your secret :</code></pre>
+
+  <p>بعد از وارد کردن رمز عبور، باید یک <strong>LocalName</strong> برای این برنامه تعیین کنید. این نام به شما کمک می‌کند برنامه خود را در آینده راحت‌تر مدیریت کنید:</p>
+  <pre><code>Please set a localname for this app :</code></pre>
+
+  <h2>مرحله 3 — انتظار برای ایجاد اتصال</h2>
+  <p>
+    بعد از وارد کردن اطلاعات، سیستم شروع به ایجاد اتصال می‌کند. این فرایند ممکن است چند دقیقه طول بکشد و پیام‌هایی مانند زیر را مشاهده خواهید کرد:
+  </p>
+  <pre><code>
+Collect Information From CloudPixel Edge      [Success]
+Validate the Information for security reasons  [Success]
+Create new instance of CoForgent                   [Success]
+Including the configuration                              [Success]
+Ping the web application                                  [Success] 
+Shutting down the application                         [Success]
+  </code></pre>
+
+  <p>
+    هر پیام <code>[Success]</code> به این معناست که آن مرحله با موفقیت انجام شده است. پس از پایان این مراحل، اتصال به Tunnel برقرار شده و سیستم شما آماده استفاده است.
+  </p>
+
+  <h2>مرحله 4 — استفاده از Tunnel</h2>
+  <p>
+    اکنون می‌توانید از دستورات Tunnel برای مدیریت برنامه‌ها و کنترل اتصالات استفاده کنید. نمونه دستورات:
+  </p>
+  <ul>
+    <li><code>tunnel &lt;lname&gt; --&lt;field&gt; --&lt;value&gt;</code> برای تنظیم مقادیر مشخص</li>
+    <li><code>tunnel &lt;lname&gt; --funcs --&lt;name&gt; &lt;args&gt;</code> برای اجرای توابع خاص برنامه</li>
+  </ul>
+
+  <p>مثال:</p>
+  <pre><code>
+tunnel myapp --incoming --3
+tunnel myapp --funcs --start
+  </code></pre>
+
+  <p>
+    برای مشاهده تمامی دستورات و راهنمایی‌ها، دستور <code>--help</code> را وارد کنید تا لیست کامل گزینه‌ها و قابلیت‌ها نمایش داده شود.
+  </p>
+
+  <hr>
+
+  <h3>نکات مهم</h3>
+  <ul>
+    <li>دستورها را با دقت وارد کنید تا اتصال بدون مشکل برقرار شود.</li>
+    <li>نام LocalName برنامه را به خاطر بسپارید، زیرا برای اجرای دستورات بعدی ضروری است.</li>
+    <li>رمز عبور خود را محرمانه نگه دارید و با کسی به اشتراک نگذارید.</li>
+    <li>در صورت بروز خطا یا مشکل اتصال، یک بار سیستم را ریستارت کنید و دوباره مراحل را انجام دهید.</li>
+    <li>هنگام اجرای دستورات، اتصال اینترنت شما پایدار باشد تا مراحل به درستی انجام شوند.</li>
+  </ul>
+
+</article>
+
 </div>
             <div class="col-md-4">
                <div class="position-sticky" style="top: 2rem;">
