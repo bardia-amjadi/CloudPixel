@@ -74,11 +74,11 @@
           ساده‌سازی مدیریت نسخه‌ها و ایجاد تجربه‌ای سریع برای توسعه‌دهندگان است.
         </p>
         <div class="hero-actions" style="justify-content: flex-start;">
-          <a href="https://github.com/USERNAME/verhub/releases" target="_blank" rel="noopener" class="btn btn-primary">
+          <a href="https://github.com/bardia-amjadi/VerHub/releases" target="_blank" rel="noopener" class="btn btn-primary">
             <i data-lucide="download"></i>
             Download Release
           </a>
-          <a href="https://github.com/USERNAME/verhub" target="_blank" rel="noopener" class="btn btn-secondary">
+          <a href="https://github.com/bardia-amjadi/VerHub" target="_blank" rel="noopener" class="btn btn-secondary">
             <i data-lucide="github"></i>
             GitHub
           </a>
@@ -110,7 +110,7 @@
             <span class="filename">verhub.sh</span>
           </div>
           <pre><code><span class="c-comment"># اجرای سرویس VerHub</span>
-<span class="c-keyword">$</span> verhub start
+<span class="c-keyword">$</span> varhub.exe
 
 <span class="c-comment"># خروجی</span>
 VerHub is running on <span class="c-string">http://localhost:5055</span>
@@ -149,8 +149,8 @@ Status: <span class="c-string">ready</span></code>
         </div>
         <div class="card reveal">
           <div class="card-icon"><i data-lucide="terminal-square"></i></div>
-          <h3>رابط خط فرمان</h3>
-          <p>دستورات ساده برای شروع، توقف و بررسی وضعیت سرویس از طریق ترمینال.</p>
+          <h3>رابط تحت وب</h3>
+          <p>داشبورد ساده برای شروع، توقف و بررسی وضعیت سرویس از طریق وب</p>
         </div>
         <div class="card reveal">
           <div class="card-icon"><i data-lucide="folder-git-2"></i></div>
@@ -180,7 +180,7 @@ Status: <span class="c-string">ready</span></code>
         <div class="step reveal">
           <span class="step-num">01</span>
           <h4>اجرای سرویس</h4>
-          <p>با دستور <code class="mono">verhub start</code> سرویس روی پورت 5055 اجرا می‌شود.</p>
+          <p>با اجرای فایل <code class="mono">verhub.exe</code> سرویس روی پورت 5055 اجرا می‌شود.</p>
         </div>
         <div class="step reveal">
           <span class="step-num">02</span>
@@ -190,7 +190,7 @@ Status: <span class="c-string">ready</span></code>
         <div class="step reveal">
           <span class="step-num">03</span>
           <h4>سوییچ و مدیریت</h4>
-          <p>از طریق CLI یا رابط سرویس، بین نسخه‌ها جابه‌جا شده و وضعیت را بررسی کنید.</p>
+          <p>از طریق Web یا رابط سرویس، بین نسخه‌ها جابه‌جا شده و وضعیت را بررسی کنید.</p>
         </div>
       </div>
     </div>
@@ -208,9 +208,8 @@ Status: <span class="c-string">ready</span></code>
             <tbody>
               <tr><td>اجرای لوکال</td><td>پشتیبانی می‌شود</td></tr>
               <tr><td>مدیریت چند پروژه</td><td>پشتیبانی می‌شود</td></tr>
-              <tr><td>رابط CLI</td><td>پشتیبانی می‌شود</td></tr>
-              <tr><td>رابط گرافیکی (Web UI)</td><td>در نقشه راه</td></tr>
-              <tr><td>افزونه‌ها (Plugins)</td><td>در نقشه راه</td></tr>
+              <tr><td>رابط Web</td><td>پشتیبانی می‌شود</td></tr>
+              <tr><td>رابط CLI</td><td>در نقشه راه</td></tr>
             </tbody>
           </table>
         </div>
@@ -236,35 +235,6 @@ Status: <span class="c-string">ready</span></code>
     </div>
   </section>
 
-  <!-- ==================== Future Plans ==================== -->
-  <section class="section" id="future-plans">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow"><i data-lucide="map" style="width:14px;height:14px;"></i>نقشه راه</span>
-        <h2>برنامه‌های آینده</h2>
-        <p>مسیر توسعه VerHub در ماه‌های پیش رو.</p>
-      </div>
-
-      <div class="roadmap reveal">
-        <div class="roadmap-item">
-          <span class="status">در حال توسعه</span>
-          <h4>رابط کاربری تحت وب</h4>
-          <p>اضافه‌شدن یک Dashboard تصویری برای مدیریت نسخه‌ها بدون نیاز به CLI.</p>
-        </div>
-        <div class="roadmap-item">
-          <span class="status">برنامه‌ریزی‌شده</span>
-          <h4>پشتیبانی از افزونه‌ها</h4>
-          <p>امکان توسعه Plugin برای پشتیبانی از ابزارها و زبان‌های بیشتر.</p>
-        </div>
-        <div class="roadmap-item">
-          <span class="status">در بررسی</span>
-          <h4>همگام‌سازی ابری (اختیاری)</h4>
-          <p>گزینه‌ای برای پشتیبان‌گیری از تنظیمات نسخه‌ها به‌صورت اختیاری.</p>
-        </div>
-        <!-- TODO: موارد بیشتر نقشه راه VerHub را اینجا اضافه کنید -->
-      </div>
-    </div>
-  </section>
 
   <!-- ==================== Screenshots ==================== -->
   <section class="section" id="screenshots">
@@ -293,26 +263,6 @@ Status: <span class="c-string">ready</span></code>
     </div>
   </section>
 
-  <!-- ==================== Code Example ==================== -->
-  <section class="section" id="code-example">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow"><i data-lucide="terminal" style="width:14px;height:14px;"></i>نمونه کد</span>
-        <h2>شروع سریع</h2>
-        <p>اجرای VerHub تنها با یک دستور.</p>
-      </div>
-
-      <div class="terminal reveal" style="max-width: 720px; margin: 0 auto;">
-        <div class="terminal-head">
-          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="filename">bash</span>
-        </div>
-        <pre><code><span class="c-keyword">$</span> verhub start</code>
-<!-- TODO: نمونه کدهای بیشتر VerHub را اینجا اضافه کنید --></pre>
-      </div>
-    </div>
-  </section>
-
   <!-- ==================== Bottom CTA ==================== -->
   <section class="section" style="padding-top: 0;">
     <div class="container">
@@ -320,11 +270,11 @@ Status: <span class="c-string">ready</span></code>
         <h2>VerHub را همین حالا امتحان کنید</h2>
         <p>کد را از GitHub دریافت کنید یا آخرین نسخه منتشرشده را دانلود کنید.</p>
         <div class="cta-actions">
-          <a href="https://github.com/USERNAME/verhub" target="_blank" rel="noopener" class="btn btn-primary">
+          <a href="https://github.com/bardia-amjadi/VerHub" target="_blank" rel="noopener" class="btn btn-primary">
             <i data-lucide="github"></i>
             GitHub
           </a>
-          <a href="https://github.com/USERNAME/verhub/releases" target="_blank" rel="noopener" class="btn btn-secondary">
+          <a href="https://github.com/bardia-amjadi/VerHub/releases" target="_blank" rel="noopener" class="btn btn-secondary">
             <i data-lucide="download"></i>
             Download Release
           </a>
@@ -365,8 +315,8 @@ Status: <span class="c-string">ready</span></code>
       <div class="footer-col">
         <h5>GitHub</h5>
         <ul>
-          <li><a href="https://github.com/USERNAME" target="_blank" rel="noopener">پروفایل سازمانی</a></li>
-          <li><a href="https://github.com/USERNAME/verhub" target="_blank" rel="noopener">مخزن VerHub</a></li>
+          <li><a href="https://github.com/bardia-amjadi" target="_blank" rel="noopener">پروفایل</a></li>
+          <li><a href="https://github.com/bardia-amjadi/Verhub" target="_blank" rel="noopener">مخزن VerHub</a></li>
         </ul>
       </div>
     </div>
