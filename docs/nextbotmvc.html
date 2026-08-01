@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Next Bot App MVC — CloudPixel</title>
+<meta name="description" content="Framework توسعه ربات تلگرام با C# و معماری MVC.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<!-- ==================== Navbar ==================== -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark"><i data-lucide="hexagon"></i></span>
+      CloudPixel
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html#hero">خانه</a></li>
+        <li><a href="index.html#products">محصولات</a></li>
+        <li><a href="index.html#about">درباره</a></li>
+        <li><a href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="https://github.com/USERNAME/nextbotmvc/releases" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+        <i data-lucide="download"></i>
+        Download
+      </a>
+      <button class="nav-toggle" aria-label="باز کردن منو" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ==================== Hero ==================== -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <span class="hero-blob b1" style="width:400px;height:400px;top:-140px;right:-100px;"></span>
+      <span class="hero-blob b2" style="width:340px;height:340px;bottom:-160px;left:-120px;"></span>
+      <span class="hero-blob b4"></span>
+      <span class="hero-blob b5"></span>
+      <div class="hero-grid-overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">خانه</a>
+        <i data-lucide="chevron-left" style="width:14px;height:14px;"></i>
+        <a href="index.html#products">محصولات</a>
+        <i data-lucide="chevron-left" style="width:14px;height:14px;"></i>
+        <span>Next Bot App MVC</span>
+      </div>
+
+      <div class="hero-content" style="max-width: 860px; margin: 0;">
+        <span class="hero-badge">
+          <span class="dot"></span>
+          Telegram Bot Framework · C#
+        </span>
+        <h1 style="font-size: clamp(32px, 5vw, 58px); text-align: right;">
+          Next Bot App <span class="gradient-text">MVC</span>
+        </h1>
+        <p class="hero-lead" style="text-align: right; margin: 0 0 40px;">
+          Next Bot App MVC یک Framework برای توسعه ربات‌های تلگرام با زبان C# است که معماری آن از
+          ASP.NET Core MVC الهام گرفته شده است. این فریم‌ورک مفاهیمی مانند Controller، View،
+          Middleware، Routing و Dependency Injection را برای ساخت ربات‌ها فراهم می‌کند.
+        </p>
+        <div class="hero-actions" style="justify-content: flex-start;">
+          <a href="https://github.com/USERNAME/nextbotmvc/releases" target="_blank" rel="noopener" class="btn btn-primary">
+            <i data-lucide="download"></i>
+            Download Release
+          </a>
+          <a href="https://github.com/USERNAME/nextbotmvc" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i data-lucide="github"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Features ==================== -->
+  <section class="section section-glow glow-purple-pink" id="features" style="padding-top: 40px;">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i data-lucide="star" style="width:14px;height:14px;"></i>امکانات</span>
+        <h2>ویژگی‌ها</h2>
+        <p>مفاهیم آشنای ASP.NET Core MVC، اکنون برای توسعه ربات تلگرام.</p>
+      </div>
+
+      <div class="feature-grid" data-reveal-group>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="layout-template"></i></div>
+          <h3>معماری MVC</h3>
+          <p>جداسازی منطق، داده و نمایش دقیقاً مطابق با الگوی Controller / View که در ASP.NET Core آشنا است.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="route"></i></div>
+          <h3>Routing انعطاف‌پذیر</h3>
+          <p>مسیریابی پیام‌ها و دستورات تلگرام مشابه Routing در وب اپلیکیشن‌های ASP.NET Core.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="syringe"></i></div>
+          <h3>Dependency Injection</h3>
+          <p>مدیریت سرویس‌ها و وابستگی‌ها به‌صورت داخلی، بدون نیاز به پیکربندی دستی.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="filter"></i></div>
+          <h3>Middleware Pipeline</h3>
+          <p>امکان افزودن لایه‌های پردازشی پیش و پس از اجرای هر Handler برای پیام‌ها.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="shield"></i></div>
+          <h3>Authorization</h3>
+          <p>کنترل دسترسی کاربران به Command ها و بخش‌های مختلف ربات به‌صورت اعلانی (Declarative).</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="database"></i></div>
+          <h3>State Management</h3>
+          <p>مدیریت وضعیت مکالمه کاربران برای ساخت جریان‌های گفت‌وگوی چندمرحله‌ای.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="file-text"></i></div>
+          <h3>Markdown Views</h3>
+          <p>نگارش پاسخ‌های ربات با View های مبتنی بر Markdown، مشابه Razor Views.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="send"></i></div>
+          <h3>Telegram Bot Development</h3>
+          <p>یکپارچه با Telegram Bot API برای ساخت سریع ربات‌های حرفه‌ای.</p>
+          <!-- TODO: ویژگی‌های بیشتر Next Bot App MVC را اینجا اضافه کنید -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Architecture ==================== -->
+  <section class="section section-glow glow-blue-purple" id="architecture">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="reveal">
+          <span class="eyebrow"><i data-lucide="layers-3" style="width:14px;height:14px;"></i>معماری</span>
+          <h2 style="font-size: clamp(24px, 3.5vw, 34px); margin-bottom: 16px;">
+            الهام‌گرفته از ASP.NET Core MVC
+          </h2>
+          <p style="color: var(--muted); font-size: 16px; margin-bottom: 20px;">
+            هر پیام دریافتی از تلگرام مانند یک Request در نظر گرفته می‌شود که از میان Middleware ها
+            عبور کرده، توسط Router به Controller مناسب هدایت شده و در نهایت با یک View (پاسخ) پردازش
+            می‌شود؛ دقیقاً همان جریانی که در ASP.NET Core MVC وجود دارد.
+          </p>
+          <table class="info-table">
+            <thead><tr><th>مفهوم ASP.NET Core</th><th>معادل در Next Bot App MVC</th></tr></thead>
+            <tbody>
+              <tr><td>Controller</td><td>مدیریت Command ها و پیام‌های ورودی</td></tr>
+              <tr><td>View</td><td>قالب پاسخ (Markdown View)</td></tr>
+              <tr><td>Routing</td><td>مسیریابی Command ها و Callback ها</td></tr>
+              <tr><td>Middleware</td><td>پردازش پیش/پس از دریافت پیام</td></tr>
+              <tr><td>DI Container</td><td>مدیریت سرویس‌های ربات</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="terminal reveal">
+          <div class="terminal-head">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="filename">StartCommandController.cs</span>
+          </div>
+          <pre><code><span class="c-keyword">public class</span> <span class="c-func">StartController</span> : BotController
+{
+    <span class="c-keyword">public</span> IActionResult <span class="c-func">Index</span>()
+    {
+        <span class="c-keyword">return</span> View(<span class="c-string">"Welcome"</span>);
+    }
+}
+
+<span class="c-comment">// Middleware, Routing و DI به‌صورت خودکار</span>
+<span class="c-comment">// توسط Next Bot App MVC مدیریت می‌شوند</span></code>
+<!-- TODO: نمونه کد واقعی خودم را اینجا جایگزین می‌کنم --></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Why Use It ==================== -->
+  <section class="section" id="why-use-it">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i data-lucide="help-circle" style="width:14px;height:14px;"></i>چرا این فریم‌ورک؟</span>
+        <h2>چرا از Next Bot App MVC استفاده کنیم</h2>
+        <p>برای توسعه‌دهندگان C# که با ASP.NET Core آشنا هستند، یادگیری تقریباً صفر است.</p>
+      </div>
+
+      <div class="grid grid-3" data-reveal-group>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
+          <h3>یادگیری سریع</h3>
+          <p>اگر با ASP.NET Core MVC کار کرده باشید، ساختار این فریم‌ورک برایتان کاملاً آشناست.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="scaling"></i></div>
+          <h3>مقیاس‌پذیر</h3>
+          <p>مناسب برای ربات‌های ساده تا پروژه‌های بزرگ با چندین ماژول و Controller.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon"><i data-lucide="test-tube-2"></i></div>
+          <h3>قابل تست</h3>
+          <p>جداسازی لایه‌ها امکان نوشتن Unit Test برای منطق ربات را فراهم می‌کند.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Getting Started ==================== -->
+  <section class="section" id="getting-started">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i data-lucide="rocket" style="width:14px;height:14px;"></i>شروع کار</span>
+        <h2>Getting Started</h2>
+        <p>در چند دقیقه اولین ربات خود را با Next Bot App MVC اجرا کنید.</p>
+      </div>
+
+      <div class="terminal reveal" style="max-width: 720px; margin: 0 auto;">
+        <div class="terminal-head">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="filename">bash</span>
+        </div>
+        <pre><code><span class="c-comment"># نصب قالب پروژه</span>
+<span class="c-keyword">$</span> dotnet new install NextBotAppMVC.Templates
+
+<span class="c-comment"># ساخت پروژه جدید</span>
+<span class="c-keyword">$</span> dotnet new nextbotmvc -n MyTelegramBot
+
+<span class="c-comment"># اجرای ربات</span>
+<span class="c-keyword">$</span> dotnet run</code>
+<!-- TODO: مراحل نصب و راه‌اندازی دقیق را اینجا تکمیل می‌کنم --></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Examples ==================== -->
+  <section class="section" id="examples">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i data-lucide="code" style="width:14px;height:14px;"></i>نمونه‌ها</span>
+        <h2>نمونه کد</h2>
+        <p>یک Controller ساده برای مدیریت دستور <code class="mono">/start</code></p>
+      </div>
+
+      <div class="terminal reveal" style="max-width: 760px; margin: 0 auto;">
+        <div class="terminal-head">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="filename">Controllers/StartController.cs</span>
+        </div>
+        <pre><code><span class="c-keyword">[Route</span>(<span class="c-string">"start"</span>)<span class="c-keyword">]</span>
+<span class="c-keyword">public class</span> <span class="c-func">StartController</span> : BotController
+{
+    <span class="c-keyword">private readonly</span> IUserService _users;
+
+    <span class="c-keyword">public</span> <span class="c-func">StartController</span>(IUserService users)
+    {
+        _users = users;
+    }
+
+    <span class="c-keyword">public async</span> Task&lt;IActionResult&gt; <span class="c-func">Index</span>()
+    {
+        <span class="c-keyword">await</span> _users.RegisterAsync(CurrentUser);
+        <span class="c-keyword">return</span> View(<span class="c-string">"Welcome"</span>);
+    }
+}</code>
+<!-- TODO: نمونه کد اصلی و کامل خودم را اینجا جایگزین می‌کنم --></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Documentation ==================== -->
+  <section class="section" id="documentation">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="reveal">
+          <span class="eyebrow"><i data-lucide="book-open" style="width:14px;height:14px;"></i>مستندات</span>
+          <h2 style="font-size: clamp(24px, 3.5vw, 34px); margin-bottom: 16px;">مستندسازی</h2>
+          <p style="color: var(--muted); font-size: 16px; margin-bottom: 20px;">
+            مستندات کامل Next Bot App MVC شامل راهنمای نصب، معماری، Controller ها، Middleware
+            نویسی و مدیریت وضعیت به‌زودی در مخزن GitHub پروژه منتشر می‌شود.
+          </p>
+          <!-- TODO: لینک مستندات کامل را اینجا اضافه کنید -->
+          <div class="about-editable">
+            <!-- TODO --> مستندات کامل به‌زودی منتشر می‌شود.
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="grid grid-2" style="gap: 16px;">
+            <div class="card reveal" style="padding: 24px;">
+              <div class="card-icon"><i data-lucide="book"></i></div>
+              <h3 style="font-size:16px;">راهنمای شروع</h3>
+              <p style="font-size:14px;">نصب، پیکربندی و اجرای اولین پروژه.</p>
+            </div>
+            <div class="card reveal" style="padding: 24px;">
+              <div class="card-icon"><i data-lucide="layers"></i></div>
+              <h3 style="font-size:16px;">راهنمای معماری</h3>
+              <p style="font-size:14px;">جزئیات Controller، Middleware و DI.</p>
+            </div>
+            <div class="card reveal" style="padding: 24px;">
+              <div class="card-icon"><i data-lucide="shield"></i></div>
+              <h3 style="font-size:16px;">Authorization</h3>
+              <p style="font-size:14px;">کنترل دسترسی کاربران به دستورات.</p>
+            </div>
+            <div class="card reveal" style="padding: 24px;">
+              <div class="card-icon"><i data-lucide="database"></i></div>
+              <h3 style="font-size:16px;">State Management</h3>
+              <p style="font-size:14px;">مدیریت جریان‌های گفت‌وگوی چندمرحله‌ای.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Roadmap ==================== -->
+  <section class="section" id="roadmap">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i data-lucide="map" style="width:14px;height:14px;"></i>نقشه راه</span>
+        <h2>Roadmap</h2>
+        <p>مسیر توسعه Next Bot App MVC.</p>
+      </div>
+
+      <div class="roadmap reveal">
+        <div class="roadmap-item">
+          <span class="status">در حال توسعه</span>
+          <h4>پشتیبانی کامل از Inline Query</h4>
+          <p>افزودن Handler های اختصاصی برای Inline Mode تلگرام.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="status">برنامه‌ریزی‌شده</span>
+          <h4>CLI اختصاصی پروژه</h4>
+          <p>ابزار خط فرمان برای ساخت سریع Controller و View جدید.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="status">در بررسی</span>
+          <h4>قالب‌های آماده (Starter Templates)</h4>
+          <p>مجموعه‌ای از قالب‌های آماده برای شروع سریع پروژه‌های رایج.</p>
+        </div>
+        <!-- TODO: موارد بیشتر نقشه راه Next Bot App MVC را اینجا اضافه کنید -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Bottom CTA ==================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>همین حالا اولین ربات خود را بسازید</h2>
+        <p>کد را از GitHub دریافت کنید یا آخرین نسخه منتشرشده را دانلود کنید.</p>
+        <div class="cta-actions">
+          <a href="https://github.com/USERNAME/nextbotmvc" target="_blank" rel="noopener" class="btn btn-primary">
+            <i data-lucide="github"></i>
+            GitHub
+          </a>
+          <a href="https://github.com/USERNAME/nextbotmvc/releases" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i data-lucide="download"></i>
+            Download Release
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== Footer ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark"><i data-lucide="hexagon"></i></span>
+          CloudPixel
+        </a>
+        <p>Enterprise Developer Platform — مجموعه‌ای از ابزارهای سازمانی برای توسعه‌دهندگان.</p>
+      </div>
+      <div class="footer-col">
+        <h5>پیوندهای سریع</h5>
+        <ul>
+          <li><a href="index.html#hero">خانه</a></li>
+          <li><a href="index.html#about">درباره</a></li>
+          <li><a href="index.html#products">محصولات</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>محصولات</h5>
+        <ul>
+          <li><a href="verhub.html">VerHub</a></li>
+          <li><a href="nextbotmvc.html">Next Bot App MVC</a></li>
+          <li><a href="bhr.html">Bot Head Records</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>GitHub</h5>
+        <ul>
+          <li><a href="https://github.com/USERNAME" target="_blank" rel="noopener">پروفایل سازمانی</a></li>
+          <li><a href="https://github.com/USERNAME/nextbotmvc" target="_blank" rel="noopener">مخزن Next Bot App MVC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© CloudPixel — تمامی حقوق محفوظ است.</span>
+      <div class="footer-social">
+        <a href="https://github.com/USERNAME" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+        <a href="#" aria-label="Telegram"><i data-lucide="send"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
