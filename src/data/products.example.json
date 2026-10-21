@@ -1,0 +1,36 @@
+[
+  {
+    "slug": "sample-desktop-app",
+    "name": "Sample Desktop App (sample data)",
+    "description": "Clearly labeled sample entry showing every supported field. Replace or delete it.",
+    "category": "Desktop app",
+    "type": "desktop",
+    "status": "beta",
+    "featured": true,
+    "version": "0.9.0",
+    "releaseDate": "2026-01-15",
+    "platforms": ["Windows", "Linux"],
+    "features": ["Feature one", "Feature two"],
+    "requirements": ["64-bit OS", "4 GB RAM"],
+    "downloads": [{ "label": "Download for Windows", "url": "https://example.com/app.exe" }],
+    "links": { "github": "https://github.com/example/sample", "releases": "https://github.com/example/sample/releases" }
+  },
+  {
+    "slug": "sample-web-tool",
+    "name": "Sample Web Tool (sample data)",
+    "description": "A sample web product with a Visit Website button.",
+    "category": "Website",
+    "type": "web",
+    "status": "stable",
+    "version": "1.2.0",
+    "links": { "website": "https://example.com" }
+  },
+  {
+    "slug": "sample-lab",
+    "name": "Sample Lab Project (sample data)",
+    "description": "An experimental project, shown separately from official products.",
+    "category": "Developer tool",
+    "type": "tool",
+    "status": "experimental"
+  }
+]
