@@ -7,6 +7,8 @@ import Repos from './pages/Repos'
 import ProductDetail from './pages/ProductDetail'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -36,6 +38,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/repos" element={<Repos />} />
         <Route path="/repos/:slug" element={<ProductDetail />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />

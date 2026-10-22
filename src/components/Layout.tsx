@@ -5,6 +5,7 @@ import config from '../data/site-config.json'
 const nav = [
   { to: '/', label: 'Home', end: true },
   { to: '/repos', label: 'Repos' },
+  { to: '/blog', label: 'Blog' },
   { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
 ]
@@ -60,6 +61,7 @@ export default function Layout({ children }: { children: ReactNode }) {
               <a key={l.key} href={l.href} target={l.key === 'email' ? undefined : '_blank'} rel="noopener noreferrer">{l.label}</a>
             ))}
             <Link to="/repos">Repos</Link>
+            <Link to="/blog">Blog</Link>
             <Link to="/contact">Contact</Link>
           </div>
         </div>
