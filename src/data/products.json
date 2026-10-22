@@ -31,5 +31,34 @@
       "docs": "https://github.com/bardia-amjadi/PowerMath#readme",
       "releases": "https://github.com/bardia-amjadi/PowerMath/releases"
     }
-  }
+  },
+  {
+    "slug": "tservice-shop",
+    "name": "TService Shop",
+    "description": "A proxy provider shop that sells many kinds of VPNs, such as V2Ray, Shadowsocks, and WireGuard, and even DNS for gaming.",
+    "category": "Website",
+    "type": "web",
+    "status": "released",
+    "featured": true,
+    "logo": "assets/tservice/logo.png",
+    "image": "",
+    "screenshots": [],
+    "video": "",
+    "version": "1.0.0",
+    "releaseDate": "2026-10-22",
+    "platforms": ["Browser"],
+    "features": [
+      "Very Cheap",
+      "Have Subs",
+      "Wireguard, V2Ray , ShadowSocks and WireGuard",
+      "DNS for gaming",
+      "Saved variables and functions, history and settings that persist",
+      "Shift, Alt and Ctrl keypad layers, DEG/RAD modes and hardware keyboard support",
+      "Accent colours (yellow, red, blue, green, purple), dark and light themes, adjustable key and text size",
+      "Fully offline, no ads, no tracking"
+    ],
+    "requirements": ["Android 8.0 (API 26) or newer", "No internet connection needed"],
+    "downloads": [{ "label": "Visit", "url": "https://tservice-shop.ir" }],
+    "links": { }
+  },
 ]
