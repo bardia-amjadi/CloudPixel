@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link, Route, Routes, useLocation } from 'react-router-dom'
 import Layout from './components/Layout'
+import ErrorBoundary from './components/ErrorBoundary'
 import Home from './pages/Home'
 import Repos from './pages/Repos'
 import ProductDetail from './pages/ProductDetail'
@@ -9,7 +10,9 @@ import Contact from './pages/Contact'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
-  useEffect(() => window.scrollTo(0, 0), [pathname])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
   return null
 }
 
@@ -24,9 +27,11 @@ function NotFound() {
 }
 
 export default function App() {
+  const { pathname } = useLocation()
   return (
     <Layout>
       <ScrollToTop />
+      <ErrorBoundary resetKey={pathname}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/repos" element={<Repos />} />
@@ -35,6 +40,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </ErrorBoundary>
     </Layout>
   )
 }
