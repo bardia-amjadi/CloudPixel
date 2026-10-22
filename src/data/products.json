@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "slug": "power-math",
+    "name": "Power Math",
+    "description": "An offline scientific calculator for Android with exact fractions, symbolic algebra, equation and inequality solvers with step-by-step solutions, and interactive graphing.",
+    "category": "Mobile app",
+    "type": "mobile",
+    "status": "beta",
+    "featured": true,
+    "logo": "assets/power-math/logo.png",
+    "image": "assets/power-math/main.png",
+    "screenshots": [],
+    "video": "",
+    "version": "1.0.0",
+    "releaseDate": "2026-10-22",
+    "platforms": ["Android"],
+    "features": [
+      "Exact fraction, surd and pi results, plus Decimal and Scientific modes",
+      "Simplify, expand and factor",
+      "Solve linear, quadratic and polynomial equations, polynomial inequalities and linear systems, with the discriminant and steps",
+      "Interactive graphing with pan, zoom, roots, vertex and extrema",
+      "Saved variables and functions, history and settings that persist",
+      "Shift, Alt and Ctrl keypad layers, DEG/RAD modes and hardware keyboard support",
+      "Accent colours (yellow, red, blue, green, purple), dark and light themes, adjustable key and text size",
+      "Fully offline, no ads, no tracking"
+    ],
+    "requirements": ["Android 8.0 (API 26) or newer", "No internet connection needed"],
+    "downloads": [],
+    "links": {
+      "github": "https://github.com/bardia-amjadi/PowerMath",
+      "docs": "https://github.com/bardia-amjadi/PowerMath#readme",
+      "releases": "https://github.com/bardia-amjadi/PowerMath/releases"
+    }
+  }
+]
