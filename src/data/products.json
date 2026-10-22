@@ -25,7 +25,12 @@
       "Fully offline, no ads, no tracking"
     ],
     "requirements": ["Android 8.0 (API 26) or newer", "No internet connection needed"],
-    "downloads": [{ "label": "Download for Android", "url": "https://github.com/bardia-amjadi/PowerMath/actions/runs/39676724389/artifacts/12381322623" }],
+    "downloads": [
+      {
+        "label": "Download for Android",
+        "url": "https://github.com/bardia-amjadi/PowerMath/actions/runs/39676724389/artifacts/12381322623"
+      }
+    ],
     "links": {
       "github": "https://github.com/bardia-amjadi/PowerMath",
       "docs": "https://github.com/bardia-amjadi/PowerMath#readme",
@@ -48,17 +53,13 @@
     "releaseDate": "2026-10-22",
     "platforms": ["Browser"],
     "features": [
-      "Very Cheap",
-      "Have Subs",
-      "Wireguard, V2Ray , ShadowSocks and WireGuard",
-      "DNS for gaming",
-      "Saved variables and functions, history and settings that persist",
-      "Shift, Alt and Ctrl keypad layers, DEG/RAD modes and hardware keyboard support",
-      "Accent colours (yellow, red, blue, green, purple), dark and light themes, adjustable key and text size",
-      "Fully offline, no ads, no tracking"
+      "Very affordable prices",
+      "Subscription plans",
+      "V2Ray, Shadowsocks and WireGuard",
+      "DNS for gaming"
     ],
-    "requirements": ["Android 8.0 (API 26) or newer", "No internet connection needed"],
+    "requirements": ["A modern web browser", "Internet connection required"],
     "downloads": [{ "label": "Visit", "url": "https://tservice-shop.ir" }],
-    "links": { }
-  },
+    "links": {}
+  }
 ]
