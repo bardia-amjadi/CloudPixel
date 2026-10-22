@@ -1,9 +1,10 @@
 ---
 title: Power Math 1.0 is out
 date: 2026-10-22
-description: One or two sentences shown on the blog list.
+description: An offline scientific calculator for Android.
 tags: release, android
-cover: assets/blog/power-math/main.png
+cover: assets/power-math/main.png
 ---
 
-Your post text here.
+Power Math 1.0 is out
+An offline scientific calculator for Android with exact fractions, symbolic algebra, equation and inequality solvers with step-by-step solutions, and interactive graphing.
