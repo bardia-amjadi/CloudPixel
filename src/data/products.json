@@ -25,7 +25,7 @@
       "Fully offline, no ads, no tracking"
     ],
     "requirements": ["Android 8.0 (API 26) or newer", "No internet connection needed"],
-    "downloads": ["https://github.com/bardia-amjadi/PowerMath/releases"],
+    "downloads": [{ "label": "Download for Android", "url": "https://github.com/bardia-amjadi/PowerMath/releases" }],
     "links": {
       "github": "https://github.com/bardia-amjadi/PowerMath",
       "docs": "https://github.com/bardia-amjadi/PowerMath#readme",
